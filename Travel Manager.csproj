@@ -3,6 +3,7 @@
   <PropertyGroup>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Travel_Manager</RootNamespace>
+    <UserSecretsId>97ff1113-5cc3-4127-a51a-ba461dfa4c91</UserSecretsId>
   </PropertyGroup>
 
   <ItemGroup>
