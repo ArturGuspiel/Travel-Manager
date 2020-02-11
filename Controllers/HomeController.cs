@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.Extensions.Logging;
 using Travel_Manager.Models;
+using Microsoft.EntityFrameworkCore;
 
 namespace Travel_Manager.Controllers
 {
@@ -23,10 +24,19 @@ namespace Travel_Manager.Controllers
             return View();
         }
 
-        public IActionResult Register()
+        public IActionResult Create()
         {
             return View();
         }
+
+        public IActionResult AddPost()
+        {
+            return View();
+        }
+
+     
+
+
 
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
