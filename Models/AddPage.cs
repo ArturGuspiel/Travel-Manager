@@ -9,9 +9,7 @@ namespace Travel_Manager.Models
     public class AddPage
     {
         [Key]
-        // Title, date, comment
-        public string Username { get; set; }
-        public int UserId { get; set; }
+        public int Id { get; set; }
 
 
         [Required(ErrorMessage = "Please enter Title of your post")]
@@ -19,14 +17,20 @@ namespace Travel_Manager.Models
 
         public string Title { get; set; }
 
-        [Required(ErrorMessage = "Please enter date")]
-        [DataType(DataType.DateTime)]
+       // [Required(ErrorMessage = "Please enter date")]
+      //  [DataType(DataType.DateTime)]
         [Display(Name = "Date")]
-        public DateTime date { get; set; }
+        public string date { get; set; }
 
-        [Required(ErrorMessage = "Please enter the comment")]
-        [Display(Name = "Comment")]
+        //[Required(ErrorMessage = "Please enter the comment")]
+       // [Display(Name = "Comment")]
         public string comment { get; set; }
+
+        public string Destination { get; set; }
+        public TimeSpan TimeNeeded { get; set; }
+        public string NecessaryThings { get; set; }
+        public int NumberOfPeople { get; set; }
+       
 
 
     }

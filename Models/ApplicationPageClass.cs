@@ -14,6 +14,6 @@ namespace Travel_Manager.Models
         {
 
         }
-        public DbSet<UserClass> Posts { get; set; }
+        public DbSet<AddPage> Posts { get; set; }
     }
 }

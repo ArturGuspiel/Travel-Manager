@@ -26,6 +26,7 @@ namespace Travel_Manager
         public void ConfigureServices(IServiceCollection services)
         {
             services.AddDbContext<ApplicationUserClass>(options => options.UseSqlServer(Configuration.GetConnectionString("Myconnection")));
+            services.AddDbContext<ApplicationPageClass>(options => options.UseSqlServer(Configuration.GetConnectionString("Myconnection")));
             services.AddControllersWithViews();
         }
 

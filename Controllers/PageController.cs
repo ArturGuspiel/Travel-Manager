@@ -10,14 +10,15 @@ namespace Travel_Manager.Controllers
 {
     public class PageController : Controller
     {
-/*
-        private readonly ApplicationUserClass _auc;
+        
 
-        public PageController(ApplicationUserClass auc)
+        private readonly ApplicationPageClass _auc;
+
+        public PageController(ApplicationPageClass auc)
         {
             _auc = auc;
         }
-        */
+        
         public IActionResult Index()
         {
             return View();
@@ -29,11 +30,11 @@ namespace Travel_Manager.Controllers
         {
             return View();
         }
+        
 
-        /*
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public IActionResult Create(AddPage uc)
+        public IActionResult AddPost(AddPage uc)
         {
             _auc.Add(uc);
             _auc.SaveChanges();
@@ -41,7 +42,7 @@ namespace Travel_Manager.Controllers
             return View();
         }
 
-*/
+    
 
 
     }

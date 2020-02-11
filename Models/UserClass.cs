@@ -10,6 +10,9 @@ namespace Travel_Manager.Models
     {
         [Key]
         public int UserId { get; set; }
+
+
+
         [Required(ErrorMessage ="Please enter Username")]
         [Display(Name = "User Name")]
         public string Username { get; set; }
