@@ -20,7 +20,7 @@ namespace Travel_Manager.Models
        // [Required(ErrorMessage = "Please enter date")]
       //  [DataType(DataType.DateTime)]
         [Display(Name = "Date")]
-        public string date { get; set; }
+        public DateTime? date { get; set; }
 
         //[Required(ErrorMessage = "Please enter the comment")]
        // [Display(Name = "Comment")]

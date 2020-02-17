@@ -1,0 +1,27 @@
+﻿@page
+@model Travel_Manager.Views.Home.DisplayPageModel
+@{
+    
+}
+<div class="text-center">
+    <hr/>
+
+       <center>
+           <table border="1">
+               <tr>
+                   <th>Title</th>
+                   <th>Destination</th>
+                  
+               </tr>
+               @foreach(var item in Model.getrecords)
+                   
+               {
+                   <tr>
+                       <td>@item.Title</td>
+                       <td>@item.Destination</td>
+                   </tr>
+               }
+           </table>
+       </center>
+    
+</div>

@@ -10,6 +10,8 @@ using Microsoft.Extensions.DependencyInjection;
 using Microsoft.Extensions.Hosting;
 using Microsoft.EntityFrameworkCore;
 using Travel_Manager.Models;
+using Travel_Manager.Views;
+
 
 namespace Travel_Manager
 {
@@ -28,6 +30,8 @@ namespace Travel_Manager
             services.AddDbContext<ApplicationUserClass>(options => options.UseSqlServer(Configuration.GetConnectionString("Myconnection")));
             services.AddDbContext<ApplicationPageClass>(options => options.UseSqlServer(Configuration.GetConnectionString("Myconnection")));
             services.AddControllersWithViews();
+            services.AddRazorPages();
+           
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
@@ -52,6 +56,7 @@ namespace Travel_Manager
 
             app.UseEndpoints(endpoints =>
             {
+                endpoints.MapRazorPages();
                 endpoints.MapControllerRoute(
                     name: "default",
                     pattern: "{controller=Home}/{action=Index}/{id?}");
